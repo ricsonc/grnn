@@ -12,7 +12,7 @@ Current codes are tested and run with anaconda python 3.6 with tensorflow 1.13.1
 Please install libraries from requirements.txt.
 
 ### Dataset
-Download the Shapenet dataset from 
+Download the Shapenet derived datasets from 
 ```
 https://www.dropbox.com/s/7fyu2s384w27lo7/all_tfrs.tar?dl=0
 ```
