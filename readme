@@ -1,0 +1,13 @@
+
+Setup Instructions
+
+1. install libraries from requirements.txt
+2. download all_tfrs.tar from https://www.dropbox.com/s/7fyu2s384w27lo7/all_tfrs.tar?dl=0, and extract in the top level of the repository. these contain all the tfrecords relevant to all the shapenet derived scenes.
+3. download rooms_ring_camera and shepard_metzler_7_parts from https://console.cloud.google.com/storage/browser/gqn-dataset?pli=1 into a folder named gqn-dataset, also in the top level of the repository.
+4. download grnn_checkpoints.tar from https://www.dropbox.com/s/25wyz9rzsgp0dpv/grnn_checkpoints.tar?dl=0, and extract into top level of the repository. this contains all the trained models.
+
+Usage
+
+Open constants.py and go to where it says "START READING HERE" in order to see all the available experiments to run. The first argument following each "OG" is the name of a particular experiment. The naming scheme is as follows: the first token is the model architecture, the second token is the dataset, and the third token is the mode of operation. For example, "grnn_shapenet4_gen" runs the GRNN architecture on scenes with 4 shapenet objects. "gen" means that a video of the model's view-predictions of the scenes from all angles will be generated.
+
+`python main.py experiment_name` will run the appropriate experiment, where `experiment_name` has been replaced by an appropriate string. The outputs of the code are dumped to vis/experiment_name/.

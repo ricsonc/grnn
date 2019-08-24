@@ -1,0 +1,7 @@
+1. download shapenet
+2. select your favorite category by looking at taxonomy.json. (03001627 seems to be chairs/furniture)
+3. copy to a new directory
+4. run binvox_all.sh in order to generate binvox files
+5. run objrenderer in order to generate renders. if you get an error about opengl, it won't render correctly
+6. run gen_tfrs.py
+7. run mk_split.py
