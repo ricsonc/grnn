@@ -13,7 +13,7 @@ cycler==0.10.0
 dask==1.0.0
 decorator==4.3.0
 dill==0.2.8.2
-Django==2.1.1
+Django==2.1.11
 dopamine-rl==2.0.1
 entrypoints==0.3
 enum34==1.1.6
